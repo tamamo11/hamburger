@@ -1,0 +1,27 @@
+@use "../../global" as*;
+
+.p-header {
+  &-top {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 8px;
+  }
+  &__button {
+    @include font-roboto-bold;
+    margin-top: 0.8rem;
+    margin-right: 0.8rem;
+    font-size: 20px;
+  }
+  &__title {
+    @include font-roboto-bold;
+    display: block;
+    font-size: 40px;
+    text-align: center;
+  }
+  &__form {
+    margin-top: 46px;
+    display: flex;
+    justify-content: center;
+
+  }
+}

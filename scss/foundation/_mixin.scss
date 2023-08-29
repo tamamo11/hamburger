@@ -1,0 +1,27 @@
+@use "../foundation/variables" as*;
+
+//メディアクエリ用mixin
+@mixin breakpoint($point){
+  @if $point == tablet {
+    @media (min-width:768px) {
+      @content;
+    }
+  }
+  @if $point == pc {
+    @media (min-width:1201px) {
+      @content;
+    }
+  }
+}
+
+//font指定用mixin
+@mixin font-roboto-bold {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: $grey_color;
+}
+
+@mixin font-mplus1-bold {
+  font-family: 'M+ M1', sans-serif;
+  font-weight: 700;
+}

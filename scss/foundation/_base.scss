@@ -1,0 +1,16 @@
+@use "../global" as *;
+
+@font-face {
+  font-family: "M+1m";
+  src: url("../../assets/fonts/M__1m/mplus-1m-regular.ttf") format("truetype");
+}
+
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: $mainBg_color;
+}
