@@ -1,0 +1,19 @@
+@use "../../global" as*;
+
+
+.p-main_hero {
+  position: relative;
+  >img {
+    width: 100%;
+    height: auto;
+  }
+  &__text {
+    @include font-mplus1-bold;
+    font-size: 36px;
+    color: #fff;
+    margin-left: 25px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
