@@ -11,20 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=Roboto:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <!-- google fonts icon  -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
 
-    <!--Font Awesome CDN-->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="style.css" />
 
     <title>Hamburger</title>
   </head>
@@ -34,58 +27,115 @@
         <button class="p-header__button">Menu</button>
       </div>
       <h1 class="p-header__title">Hamburger</h1>
-      <form action="#" class="p-header__form c-search">
-        <label>
+      <div class="p-header-wrapflex">
+        <form class="p-header__form c-search">
+          <span class="material-symbols-outlined c-search-icon"> search </span>
           <input
             type="text"
             name="search"
             value=""
-            placeholder="&#xf002; 検索内容を入力"
-            style="font-family: FontAwesome"
+            placeholder="検索内容を入力"
             class="c-search__input"
           />
-        </label>
-        <button type="submit" class="c-search__button">検索</button>
-      </form>
+          <button type="submit" class="c-search__button">検索</button>
+        </form>
+      </div>
     </header>
     <main class="l-main">
       <div class="l-main_hero p-main_hero">
-        <img
-          src="./assets/hero_mobile.jpg"
-          alt="Hero画像"
-          class="p-main_hero__img"
-        />
         <h2 class="p-main_hero__text">ダミーサイト</h2>
       </div>
       <article>
         <div class="l-main-card p-main-card">
-          <div class="p-main-card_takeout">
-            <span class="p-main-card-takeout__title">Take Out</span>
-            <section></section>
-            <section></section>
+          <div class="p-main-card_content">
+            <span class="p-main-card_title p-main-card_title--takeout"
+              >Take Out</span
+            >
+            <div class="p-main-card_flexwrap">
+              <section class="p-main-card__section">
+                <h3 class="p-main-card__section_title">Take OUT</h3>
+                <p class="p-main-card__section_text">
+                  当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています
+                </p>
+              </section>
+              <section class="p-main-card__section">
+                <h3 class="p-main-card__section_title">Take OUT</h3>
+                <p class="p-main-card__section_text">
+                  当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています
+                </p>
+              </section>
+            </div>
           </div>
-          <div class="p-main-card_eatin">
-            <span class="p-main-card_eatin__title">Eat In</span>
-            <section></section>
-            <section></section>
+          <div class="p-main-card_content u-mg-bt5rem">
+            <span class="p-main-card_title p-main-card_title--eatin"
+              >Eat In</span
+            >
+            <div class="p-main-card_flexwrap">
+              <section class="p-main-card__section">
+                <h3 class="p-main-card__section_title">Eat In</h3>
+                <p class="p-main-card__section_text">
+                  店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです
+                </p>
+              </section>
+              <section class="p-main-card__section">
+                <h3 class="p-main-card__section_title">Eat In</h3>
+                <p class="p-main-card__section_text">
+                  店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです
+                </p>
+              </section>
+            </div>
           </div>
         </div>
-        <div class="l-main_map p-main_map">
-          <img src="./assets/map_mobile.png" alt="map" class="p-main_map" />
-          <section class="p-main_map__article">
-            <h2>見出しが入ります</h2>
-            <p>
-              テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+        <div class="l-main_map p-main-map">
+          <div class="p-main-map__overlay1"></div>
+          <div class="p-main-map__overlay2"></div>
+          <section class="p-main-map__article">
+            <h2 class="p-main-map__title">見出しが入ります</h2>
+            <p class="p-main-map__p">
+              テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
             </p>
           </section>
         </div>
       </article>
     </main>
-    <footer class="l-footer">
-      <nav>
-        <a href="#">ショップ情報</a><span>｜</span><a href="">ヒストリー</a>
+    <aside class="l-sidebar p-sidebar">
+      <h2>Menu</h2>
+      <h3>バーガー</h3>
+      <ul>
+        <li>ハンバーガー</li>
+        <li>チーズバーガー</li>
+        <li>テリヤキバーガー</li>
+        <li>アボカドバーガー</li>
+        <li>フィッシュバーガー</li>
+        <li>ベーコンバーガー</li>
+        <li>チキンバーガー</li>
+      </ul>
+      <h3>サイド</h3>
+      <ul>
+        <li>ポテト</li>
+        <li>サラダ</li>
+        <li>ナゲット</li>
+        <li>コーン</li>
+      </ul>
+      <h3>ドリンク</h3>
+      <ul>
+        <li>コーラ</li>
+        <li>ファンタ</li>
+        <li>オレンジ</li>
+        <li>アップル</li>
+        <li>紅茶(Ice/Hot)</li>
+        <li>コーヒー(Ice/Hot)</li>
+      </ul>
+    </aside>
+    <footer class="l-footer p-footer">
+      <nav class="p-footer__nav">
+        <ul class="p-footer__ul">
+          <li><a href="#">ショップ情報</a></li>
+          <li>｜</li>
+          <li><a href="#">ヒストリー</a></li>
+        </ul>
       </nav>
-      <p class="c-copyright">Copyright: RaiseTech</p>
+      <p class="p-footer-copyright">Copyright: RaiseTech</p>
     </footer>
   </body>
 </html>

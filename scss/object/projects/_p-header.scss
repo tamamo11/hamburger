@@ -1,15 +1,11 @@
 @use "../../global" as*;
 
 .p-header {
-  &-top {
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 8px;
-  }
   &__button {
     @include font-roboto-bold;
-    margin-top: 0.8rem;
-    margin-right: 0.8rem;
+    position: absolute;
+    top: 0.8rem;
+    right: 0.8rem;
     font-size: 20px;
   }
   &__title {
@@ -17,11 +13,27 @@
     display: block;
     font-size: 40px;
     text-align: center;
+    margin-top: 40px;
   }
-  &__form {
-    margin-top: 46px;
+  &-wrapflex {
     display: flex;
     justify-content: center;
+    align-items: flex-end;
+  }
+  &__form {
+    margin-top: 40px;
+    // margin-bottom: auto;
+    display: flex;
+    justify-content: center;
+  }
 
+
+  @include breakpoint(tablet) {
+    &__button {
+      @include font-roboto-bold;
+      margin-top: 2rem;
+      margin-right: 2.5rem;
+      font-size: 34px;
+    }
   }
 }
