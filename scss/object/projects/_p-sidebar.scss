@@ -1,0 +1,35 @@
+@use "../../global" as *;
+
+.p-sidebar {
+  background-color: $sidemenu_color;
+  color: $grey_color;
+
+  &__h2 {
+    @include font-roboto-bold;
+    font-size: 34px;
+    margin-top: 84px;
+    margin-left: 46px;
+    margin-bottom: 80px;
+  }
+
+  &__h3 {
+    @include font-mplus1-bold;
+    font-size: 24px;
+    margin-left: 46px;
+  }
+
+  >ul {
+    margin-top: 32px;
+    margin-left: 60px;
+    li {
+      a {
+        display: block;
+        line-height: 30px;
+        margin-top: 20px;
+      }
+      &:last-child a {
+        margin-bottom: 48px;
+      }
+    }
+  }
+}

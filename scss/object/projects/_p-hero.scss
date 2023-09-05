@@ -22,10 +22,18 @@
   @include breakpoint(tablet) {
     background: url("./assets/hero_tablet.jpg") center center no-repeat;
     background-size: cover;
+    min-height: 285px;
     width: 100%;
 
     &__text {
       margin-left: 85px;
     }
+  }
+
+  @include breakpoint(pc) {
+    background: url("./assets/hero_pc.jpg") center center no-repeat;
+    background-size: cover;
+    min-height: 530px;
+    width: 100%;
   }
 }

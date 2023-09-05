@@ -1,0 +1,13 @@
+@use "../global" as *;
+
+.l-sidebar {
+  display: none;
+
+  &--show {
+    display: block;
+  }
+
+  @include breakpoint(pc) {
+    display: block;
+  }
+}

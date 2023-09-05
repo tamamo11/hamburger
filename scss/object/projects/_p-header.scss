@@ -1,6 +1,11 @@
 @use "../../global" as*;
 
 .p-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
   &__button {
     @include font-roboto-bold;
     position: absolute;
@@ -22,7 +27,6 @@
   }
   &__form {
     margin-top: 40px;
-    // margin-bottom: auto;
     display: flex;
     justify-content: center;
   }
@@ -36,4 +40,27 @@
       font-size: 34px;
     }
   }
+  @include breakpoint(pc) {
+    &__button {
+      display: none;
+    }
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &__title {
+      margin: 0;
+      margin-left: 65px;
+      margin-right: auto;
+      text-align: start;
+      font-size: 64px;
+    }
+    &-wrapflex {
+      margin-right: 31px;
+    }
+  }
+
 }

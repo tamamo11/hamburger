@@ -1,0 +1,20 @@
+@use "../global" as *;
+
+.l-body {
+  @include breakpoint(pc) {
+    &-inner1 {display: flex;}
+    &-inner2 {
+      flex: 1;
+    }
+    .l-sidebar {
+      width: 19.11%;
+    }
+  }
+
+
+
+
+
+
+
+}

@@ -12,6 +12,11 @@
       @content;
     }
   }
+  @if $point == wide {
+    @media (min-width:1601px) {
+      @content;
+    }
+  }
 }
 
 //font指定用mixin
@@ -31,9 +36,14 @@
 @mixin title-underbar {
   content: "";
   position: absolute;
-  width: 34px;
+  width: 30%;
+  max-width: 75px;
   height: 4px;
   background-color: #fff;
   left: 0%;
-  bottom: -20px;
+  bottom: -15px;
+
+  @include breakpoint(pc) {
+    bottom: -40px;
+  }
 }
