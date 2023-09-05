@@ -335,7 +335,7 @@ a {
 
 .p-main_hero {
   position: relative;
-  background: url("./assets/hero_mobile.jpg") center center no-repeat;
+  background: url("../images/hero_mobile.jpg") center center no-repeat;
   background-size: cover;
   width: 100%;
   min-height: 285px;
@@ -353,7 +353,7 @@ a {
 }
 @media (min-width: 768px) {
   .p-main_hero {
-    background: url("./assets/hero_tablet.jpg") center center no-repeat;
+    background: url("../images/hero_tablet.jpg") center center no-repeat;
     background-size: cover;
     min-height: 285px;
     width: 100%;
@@ -364,7 +364,7 @@ a {
 }
 @media (min-width: 1201px) {
   .p-main_hero {
-    background: url("./assets/hero_pc.jpg") center center no-repeat;
+    background: url("../images/hero_pc.jpg") center center no-repeat;
     background-size: cover;
     min-height: 530px;
     width: 100%;
@@ -385,11 +385,11 @@ a {
   width: 100%;
 }
 .p-main-card_content:nth-of-type(1) {
-  background: url("./assets/three_mobile.jpg") center center no-repeat;
+  background: url("../images/three_mobile.jpg") center center no-repeat;
   background-size: cover;
 }
 .p-main-card_content:nth-of-type(2) {
-  background: url("./assets/burgerset_mobile.jpg") center center no-repeat;
+  background: url("../images/burgerset_mobile.jpg") center center no-repeat;
   background-size: cover;
 }
 .p-main-card__section {
@@ -464,7 +464,7 @@ a {
 }
 
 .p-main-map {
-  background: url("./assets/map_mobile.png") center center no-repeat;
+  background: url("../images/map_mobile.png") center center no-repeat;
   background-size: cover;
   min-height: 691px;
   width: 100%;
@@ -531,11 +531,25 @@ a {
   z-index: 300;
 }
 @media (min-width: 768px) {
+  .p-main-map {
+    background: url("../images/map_tablet.png") center center no-repeat;
+    background-size: cover;
+    min-height: 415px;
+    width: 100%;
+    height: 100%;
+  }
   .p-main-map__overlay2 {
     height: 100%;
   }
 }
 @media (min-width: 1201px) {
+  .p-main-map {
+    background: url("../images/map_pc.png") center center no-repeat;
+    background-size: cover;
+    min-height: 649px;
+    width: 100%;
+    height: 100%;
+  }
   .p-main-map__article {
     width: 60%;
     padding: 80px;
@@ -552,7 +566,7 @@ a {
 }
 
 .p-footer {
-  background: url("./assets/footer-bg.png") center center no-repeat;
+  background: url("../images/footer-bg.png") center center no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;

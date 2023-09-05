@@ -3,7 +3,7 @@
 
 .p-main_hero {
   position: relative;
-  background: url("./assets/hero_mobile.jpg") center center no-repeat;
+  background: url("../images/hero_mobile.jpg") center center no-repeat;
   background-size: cover;
   width: 100%;
   min-height: 285px;
@@ -20,7 +20,7 @@
   }
 
   @include breakpoint(tablet) {
-    background: url("./assets/hero_tablet.jpg") center center no-repeat;
+    background: url("../images/hero_tablet.jpg") center center no-repeat;
     background-size: cover;
     min-height: 285px;
     width: 100%;
@@ -31,7 +31,7 @@
   }
 
   @include breakpoint(pc) {
-    background: url("./assets/hero_pc.jpg") center center no-repeat;
+    background: url("../images/hero_pc.jpg") center center no-repeat;
     background-size: cover;
     min-height: 530px;
     width: 100%;
