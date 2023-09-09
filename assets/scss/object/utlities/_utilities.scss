@@ -1,7 +1,5 @@
 @use "../../global" as *;
 
-
-
 .u-mg-bt5rem {
   margin-bottom: 5rem;
   @include breakpoint(tablet) {
