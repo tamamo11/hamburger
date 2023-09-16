@@ -94,3 +94,34 @@
       }
     }
 }
+
+
+.p-main_hero.p-main_hero--single {
+  background: url("../images/hero_single-mobile.png") center center no-repeat;
+  background-size: cover;
+
+  @include breakpoint(tablet) {
+    background: url("../images/hero_single-tablet.png") center center no-repeat;
+    background-size: cover;
+  }
+  @include breakpoint(pc) {
+    background: url("../images/hero_single-pc.png") center center no-repeat;
+    background-size: cover;
+  }
+
+}
+
+
+.p-main_hero.p-main_hero--page {
+  background: url("../images/hero_page-mobile.png") center center no-repeat;
+  background-size: cover;
+
+  @include breakpoint(tablet) {  background: url("../images/hero_page-tablet.png") center center no-repeat;
+    background-size: cover;
+  }
+
+  @include breakpoint(pc) {
+    background: url("../images/hero_page-pc.png") center center no-repeat;
+    background-size: cover;
+  }
+}
