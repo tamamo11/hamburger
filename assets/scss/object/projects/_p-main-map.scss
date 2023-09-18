@@ -7,21 +7,18 @@
   width: 100%;
   height: 100%;
   position: relative;
+  padding-top: 43px;
+  padding-bottom: 57px;
 
   &__article {
-    position: absolute;
-    top:0;
-    left:0;
-    width: 100%;
-    height: 100%;
+    position: relative;
+
     z-index: 500;
     @include font-mplus1-bold;
     color: #fff;
-    overflow: hidden;
   }
   &__title {
     position: relative;
-    margin-top: 43px;
     margin-left: 43px;
     font-size: 3rem;
     z-index: 600;
@@ -36,6 +33,7 @@
     margin: 0 4rem;
     margin-top: 3rem;
     z-index: 600;
+
   }
 
 
@@ -65,7 +63,7 @@
     min-height: 415px;
     width: 100%;
     height: 100%;
-
+    padding: 40px;
     &__overlay2 {
       height: 100%;
     }
@@ -79,10 +77,10 @@
     height: 100%;
     &__article {
       width: 60%;
-      padding: 80px;
+      padding: 60px;
     }
     &__overlay2 {
-      width: 60%;
+      width: 66%;
     }
     &__title {
       margin-top: 0;

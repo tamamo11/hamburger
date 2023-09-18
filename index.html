@@ -16,17 +16,20 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+    <!-- jQuery -->
+    <script src="./assets/jQuery/jquery-3.7.1.min.js"></script>
 
     <link rel="stylesheet" href="./css/style.css" />
 
     <title>Hamburger</title>
   </head>
   <body class="l-body">
+    <div class="u-sidebar-bg"></div>
     <div class="l-body-inner1">
       <div class="l-body-inner2">
         <header class="l-header p-header">
           <div class="p-header-top">
-            <button class="p-header__button">Menu</button>
+            <button id="menu-open" class="p-header__button">Menu</button>
           </div>
           <h1 class="p-header__title">Hamburger</h1>
           <div class="p-header-wrapflex">
@@ -81,6 +84,16 @@
                     <h3 class="p-main-card__section_title">Eat In</h3>
                     <p class="p-main-card__section_text">
                       店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです
+                      店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです
+                      店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです
+                      店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです
+                      店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです
+                      店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです
+                      店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです
+                      店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです
+                      店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです
+                      店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです
+                      店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです
                     </p>
                   </section>
                   <section class="p-main-card__section">
@@ -93,19 +106,23 @@
               </div>
             </div>
             <div class="l-main_map p-main-map">
-              <div class="p-main-map__overlay1"></div>
-              <div class="p-main-map__overlay2"></div>
               <section class="p-main-map__article">
                 <h2 class="p-main-map__title">見出しが入ります</h2>
                 <p class="p-main-map__p">
                   テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                  テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
                 </p>
               </section>
+              <div class="p-main-map__overlay1"></div>
+              <div class="p-main-map__overlay2"></div>
             </div>
           </article>
         </main>
       </div>
-      <nav class="l-sidebar p-sidebar">
+      <nav class="l-sidebar p-sidebar u-sidebar-menu">
+        <button id="menu-close" class="p-sidebar__close">
+          <span class="x-mark"></span>
+        </button>
         <h2 class="p-sidebar__h2">Menu</h2>
         <h3 class="p-sidebar__h3">バーガー</h3>
         <ul>
@@ -146,5 +163,6 @@
       </nav>
       <p class="p-footer-copyright">Copyright: RaiseTech</p>
     </footer>
+    <script src="./main.js"></script>
   </body>
 </html>

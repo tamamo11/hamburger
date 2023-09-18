@@ -6,6 +6,7 @@
   border-collapse: collapse;
   border-color: $grey_color;
   margin-top: 30px;
+  background-color: #fff;
 
   th, td {
     height: 75px;
@@ -13,7 +14,7 @@
     font-weight: 400;
     padding-left: 30px;
     vertical-align: middle;
-
+    color: $mainText_color;
   }
   th {
     text-align: left;
