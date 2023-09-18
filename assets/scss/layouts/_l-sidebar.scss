@@ -1,9 +1,0 @@
-@use "../global" as *;
-
-.l-sidebar {
-  display: none;
-
-  @include breakpoint(pc) {
-    display: block;
-  }
-}

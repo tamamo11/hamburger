@@ -5,7 +5,12 @@
 .p-sidebar {
   background-color: $sidemenu_color;
   color: $grey_color;
+  position: absolute;
 
+  @include breakpoint(pc) {
+    display: block;
+    visibility: visible;
+  }
   &__h2 {
     @include font-roboto-bold;
     font-size: 34px;

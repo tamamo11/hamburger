@@ -211,6 +211,47 @@ progress {
   cursor: default;
 }
 
+@-webkit-keyframes slideIn {
+  0% {
+    right: -500px;
+    display: none;
+  }
+  100% {
+    right: 0;
+    display: block;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    right: -500px;
+    display: none;
+  }
+  100% {
+    right: 0;
+    display: block;
+  }
+}
+@-webkit-keyframes slideOut {
+  0% {
+    right: 0;
+    display: block;
+  }
+  100% {
+    right: -500px;
+    display: none;
+  }
+}
+@keyframes slideOut {
+  0% {
+    right: 0;
+    display: block;
+  }
+  100% {
+    right: -500px;
+    display: none;
+  }
+}
 @font-face {
   font-family: "M+1m";
   src: url("../../assets/fonts/M__1m/mplus-1m-regular.ttf") format("truetype");
@@ -259,15 +300,6 @@ img {
 
 .l-footer {
   height: 150px;
-}
-
-.l-sidebar {
-  display: none;
-}
-@media (min-width: 1201px) {
-  .l-sidebar {
-    display: block;
-  }
 }
 
 @media (min-width: 768px) {
@@ -532,6 +564,7 @@ img {
   margin: 0 16px 16px 16px;
   display: flex;
   flex-direction: column;
+  align-self: stretch;
 }
 .p-main-card__section_title {
   font-family: "M+ M1", sans-serif;
@@ -746,6 +779,13 @@ img {
 .p-sidebar {
   background-color: #F2EDE9;
   color: #707070;
+  position: absolute;
+}
+@media (min-width: 1201px) {
+  .p-sidebar {
+    display: block;
+    visibility: visible;
+  }
 }
 .p-sidebar__h2 {
   font-family: "Roboto", sans-serif;
@@ -1368,30 +1408,18 @@ img {
   }
 }
 
-@-webkit-keyframes slideIn {
-  0% {
-    right: -500px; /* 初期位置 */
-  }
-  100% {
-    right: 0; /* 目標位置 */
-  }
-}
-
-@keyframes slideIn {
-  0% {
-    right: -500px; /* 初期位置 */
-  }
-  100% {
-    right: 0; /* 目標位置 */
-  }
+.u-sidebar-menu {
+  position: absolute;
+  top: 0;
+  right: -500px;
 }
 @media (min-width: 1201px) {
   .u-sidebar-menu {
+    display: block;
     position: static;
   }
 }
 .u-sidebar-menu--isOpen {
-  display: block;
   position: absolute;
   top: 0;
   right: 0;
@@ -1408,5 +1436,30 @@ img {
           animation-fill-mode: forwards; /* アニメーション終了後の状態を保持 */
   -webkit-animation-delay: 1ms;
           animation-delay: 1ms;
+}
+@media (min-width: 1201px) {
+  .u-sidebar-menu--isOpen {
+    -webkit-animation: none;
+            animation: none;
+    position: static;
+  }
+}
+.u-sidebar-menu--isClose {
+  -webkit-animation-name: slideOut;
+          animation-name: slideOut;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; /* アニメーション終了後の状態を保持 */
+  -webkit-animation-delay: 1ms;
+          animation-delay: 1ms;
+}
+@media (min-width: 1201px) {
+  .u-sidebar-menu--isClose {
+    -webkit-animation: none;
+            animation: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

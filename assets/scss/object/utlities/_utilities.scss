@@ -31,22 +31,18 @@
   }
 }
 
-@keyframes slideIn {
-  0% {
-    right: -500px; /* 初期位置 */
-  }
-  100% {
-    right: 0; /* 目標位置 */
-  }
-}
 
 
 .u-sidebar-menu {
+  // display: none;
+  position: absolute;
+  top: 0;
+  right: -500px;
   @include breakpoint(pc) {
+    display: block;
     position: static;
   }
   &--isOpen {
-    display: block;
     position: absolute;
     top: 0;
     right: 0;
@@ -59,5 +55,21 @@
     animation-timing-function: ease-out;
     animation-fill-mode: forwards; /* アニメーション終了後の状態を保持 */
     animation-delay: 1ms;
+    @include breakpoint(pc) {
+      animation: none;
+      position: static;
+    }
+  }
+
+  &--isClose {
+    animation-name: slideOut;
+    animation-duration: 300ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards; /* アニメーション終了後の状態を保持 */
+    animation-delay: 1ms;
+
+    @include breakpoint(pc) {
+      animation: none;
+    }
   }
 }
