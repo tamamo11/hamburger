@@ -1,6 +1,7 @@
 (function($) {
   $(function () {
 
+    //関数定義
     function openSidebar() {
       $('body').toggleClass('u-sidebar-body--isOpen');
       $('.u-sidebar-bg').toggleClass('u-sidebar-bg--isOpen');
@@ -20,6 +21,25 @@
       $('.u-sidebar-menu').toggleClass('u-sidebar-menu--isOpen');
     }
 
+    function removeClassesIfExist(element, classesToRemove) {
+      classesToRemove.forEach(className => {
+        if (element.hasClass(className)) {
+          element.removeClass(className);
+        }
+      });
+    }
+
+    // 要素を取得
+    const bodyElement = $('body');
+    const sidebarBgElement = $('.u-sidebar-bg');
+    const sidebarMenuElement = $('.p-sidebar');
+
+    // 削除したいクラスの配列を定義
+    const classesToRemove = ['u-sidebar-body--isOpen', 'u-sidebar-bg--isOpen', 'u-sidebar-menu--isOpen', 'u-sidebar-menu--isClose'];
+
+
+    //以下イベントハンドラ
+
     $('#menu-open').on('click', function() {
       openSidebar();
     });
@@ -37,7 +57,10 @@
   $(window).on('resize', function() {
   let windowWidth = $(window).width();
   if (windowWidth <= 1201) {
-    closeSidebar();
+    // 各要素からクラスを削除
+    removeClassesIfExist(bodyElement, classesToRemove);
+    removeClassesIfExist(sidebarBgElement, classesToRemove);
+    removeClassesIfExist(sidebarMenuElement, classesToRemove);
   }
 });
   });

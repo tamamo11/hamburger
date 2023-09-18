@@ -1,6 +1,7 @@
 @use "../global" as *;
 
 .l-body {
+  overflow-x: hidden;
   @include breakpoint(pc) {
     &-inner1 {
       display: flex;

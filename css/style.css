@@ -279,6 +279,9 @@ img {
   vertical-align: bottom;
 }
 
+.l-body {
+  overflow-x: hidden;
+}
 @media (min-width: 1201px) {
   .l-body-inner1 {
     display: flex;
