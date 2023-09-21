@@ -56,7 +56,7 @@
     // ウィンドウのリサイズイベントを監視
   $(window).on('resize', function() {
   let windowWidth = $(window).width();
-  if (windowWidth <= 1201) {
+  if (windowWidth <= 1200) {
     // 各要素からクラスを削除
     removeClassesIfExist(bodyElement, classesToRemove);
     removeClassesIfExist(sidebarBgElement, classesToRemove);
